@@ -17,17 +17,21 @@ static int smartgaps          = 0;        /* 1 means no outer gap when there is 
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "JetBrainsMono Nerd Font:size=12", "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true"  };
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444"; 
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#bd93f9";
-static char selbgcolor[]            = "#bd93f9";
+static char normbgcolor[]           = "#f2e5bc";
+static char normfgcolor[]           = "#d79921";
+static char normbordercolor[]       = "#928374"; 
+static char selfgcolor[]            = "#f2e5bc";
+static char selbgcolor[]            = "#d79921";
+static char selbordercolor[]        = "#d79921";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
+/* static char fg[]         = "#282828"; */
+/* static char bg[]         = "#f2e5bc"; */
+/* static char acc[]        = "#d79921"; */
+
 
 typedef struct {
 	const char *name;
@@ -105,6 +109,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *termcmd[]  = { TERMINAL, NULL };
+
+static const char *roficmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 
 /*
  * Xresources preferences to load at startup
@@ -192,7 +198,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } },
+	/* { MODKEY,			XK_d,		spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } }, */
+	{ MODKEY,			XK_d,		spawn,          {.v = roficmd } },
 	{ MODKEY|ShiftMask,		XK_d,		spawn,		{.v = (const char*[]){ "passmenu", NULL } } },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },

@@ -17,11 +17,11 @@ static int smartgaps          = 0;        /* 1 means no outer gap when there is 
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "JetBrainsMono Nerd Font:size=12", "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true"  };
-static char normbgcolor[]           = "#f2e5bc";
-static char normfgcolor[]           = "#d79921";
+static char normbgcolor[]           = "#d79921";
+static char normfgcolor[]           = "#f2e5bc";
 static char normbordercolor[]       = "#928374"; 
-static char selfgcolor[]            = "#f2e5bc";
-static char selbgcolor[]            = "#d79921";
+static char selfgcolor[]            = "#d79921";
+static char selbgcolor[]            = "#f2e5bc";
 static char selbordercolor[]        = "#d79921";
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -64,7 +64,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
+static float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static int nmaster     = 1;    /* number of clients in master area */
 static int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */

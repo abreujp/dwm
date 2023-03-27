@@ -8,15 +8,15 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12", "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=12";
-static const char col_gray1[]       = "#fbf1c7";
-static const char col_gray2[]       = "#928374";
-static const char col_gray3[]       = "#928374";
+	static const char col_gray1[]       = "#282a36";
+static const char col_gray2[]       = "#bd93f9";
+static const char col_gray3[]       = "#f8f8f2";
 static const char col_gray4[]       = "#d79921";
-static const char col_cyan[]        = "#928374";
+static const char col_cyan[]        = "#bd93f9";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_cyan, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray1, col_cyan,  col_gray3  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
+	[SchemeSel]  = { col_gray3, col_cyan,  col_gray2  },
 };
 
 
@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "15", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray2, "-sb", col_gray2, "-sf", col_gray1, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "15", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_gray2, "-sf", col_gray3, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {

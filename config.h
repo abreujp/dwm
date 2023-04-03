@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 
 
 /* tagging */
-static const char *tags[] = { "󰨊", "", "", "", "", "", "", "8", "9" };
+static const char *tags[] = { "󰨊", "", "", "", "", "", "", "", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	{ "Thunar",   "thunar",       NULL,       1 << 2,            0,           -1 },
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },
+	{ "Postman",   "postman",       NULL,       1 << 7,            0,           -1 },
 };
 
 /* layout(s) */

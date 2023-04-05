@@ -13,7 +13,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12", "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=12";
-	static const char col_gray1[]       = "#282a36";
+static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#bd93f9";
 static const char col_gray3[]       = "#f8f8f2";
 static const char col_gray4[]       = "#d79921";
@@ -26,7 +26,7 @@ static const char *colors[][3]      = {
 
 
 /* tagging */
-static const char *tags[] = { "󰨊", "", "", "", "", "", "", "", "9" };
+static const char *tags[] = { "󰨊", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -40,6 +40,8 @@ static const Rule rules[] = {
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },
 	{ "Postman",   "postman",       NULL,       1 << 7,            0,           -1 },
+	{ "obs",   "obs",       NULL,       1 << 8,            0,           -1 },
+	{ "mpv",   NULL,       NULL,       1 << 8,            0,           -1 },
 };
 
 /* layout(s) */

@@ -41,7 +41,6 @@ static const Rule rules[] = {
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },
 	{ "Postman",   "postman",       NULL,       1 << 7,            0,           -1 },
 	{ "obs",   "obs",       NULL,       1 << 8,            0,           -1 },
-	{ "mpv",   NULL,       NULL,       1 << 8,            0,           -1 },
 };
 
 /* layout(s) */

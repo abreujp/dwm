@@ -30,7 +30,6 @@ static const char *colors[][3]      = {
 
 };
 
-
 /* tagging */
 static const char *tags[] = { "󰨊", "", "", "", "", "", "", "", "" };
 
@@ -126,6 +125,11 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
   { MODKEY|ShiftMask,             XK_e,      exitdwm,        {0} },
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock") },
+  { 0, XF86XK_AudioPrev,		spawn,		SHCMD("cmus-remote -r")},
+	{ 0, XF86XK_AudioNext,		spawn,		SHCMD("cmus-remote -n")},
+	{ 0, XF86XK_AudioPause,		spawn,		SHCMD("cmus-remote -u")},
+ 	{ 0, XF86XK_AudioPlay,		spawn,		SHCMD("cmus-remote -p")},
+	{ 0, XF86XK_AudioStop,		spawn,		SHCMD("cmus-remote -s")},
 };
 
 /* button definitions */

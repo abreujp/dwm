@@ -16,12 +16,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12", "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=12";
 
-static const char normfgcolor[]       = "#ebdbb2";
-static const char normbgcolor[]       = "#282828";
-static const char normbordercolor[]   = "#282828";
-static const char selfgcolor[]        = "#282828";
-static const char selbgcolor[]        = "#b8bb26";
-static const char selbordercolor[]    = "#b8bb26";
+static const char normfgcolor[]       = "#262626";
+static const char normbgcolor[]       = "#ffffff";
+static const char normbordercolor[]   = "#262626";
+static const char selfgcolor[]        = "#ffffff";
+static const char selbgcolor[]        = "#0f68a0";
+static const char selbordercolor[]    = "#0f68a0";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

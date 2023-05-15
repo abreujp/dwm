@@ -3,7 +3,7 @@
 #define BROWSER "google-chrome-stable"
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -18,10 +18,10 @@ static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=13";
 
 static const char normfgcolor[]       = "#262626";
 static const char normbgcolor[]       = "#ffffff";
-static const char normbordercolor[]   = "#262626";
+static const char normbordercolor[]   = "#ffffff";
 static const char selfgcolor[]        = "#ffffff";
 static const char selbgcolor[]        = "#0f68a0";
-static const char selbordercolor[]    = "#0f68a0";
+static const char selbordercolor[]    = "#4B21B0";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

@@ -13,14 +13,14 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=13:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=13:antialias=true:autohint=true" };
-static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=13";
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]       = "#262626";
-static const char normbgcolor[]       = "#ffffff";
-static const char normbordercolor[]   = "#ffffff";
-static const char selfgcolor[]        = "#ffffff";
-static const char selbgcolor[]        = "#0f68a0";
+static const char normfgcolor[]       = "#839496";
+static const char normbgcolor[]       = "#002b36";
+static const char normbordercolor[]   = "#002b36";
+static const char selfgcolor[]        = "#002b36";
+static const char selbgcolor[]        = "#839496";
 static const char selbordercolor[]    = "#0f68a0";
 
 static const char *colors[][3]      = {

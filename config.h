@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 #define BROWSER "google-chrome-stable"
+#define EXPLORER "thunar"
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
@@ -89,6 +90,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,			                  XK_w,		   spawn,		       {.v = (const char*[]){ BROWSER, NULL } } },
+	{ MODKEY,			                  XK_e,		   spawn,		       {.v = (const char*[]){ EXPLORER, NULL } } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },

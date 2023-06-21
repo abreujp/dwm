@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#define BROWSER "google-chrome-stable"
+#define BROWSER "brave-browser-stable"
 #define EXPLORER "thunar"
 
 /* appearance */
@@ -42,7 +42,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       1 << 6,            0,           -1 },
-	{ "Google-chrome",   "google-chrome",       NULL,       1 << 1,            0,           -1 },
+	{ "Brave-browser",   "NULL",       NULL,       1 << 1,            0,           -1 },
 	{ "Thunar",   "thunar",       NULL,       1 << 2,            0,           -1 },
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },
@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -80,14 +80,15 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "15", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-
+static const char *rofi[]  = { "rofi", "-show", "drun", "-show-icons", NULL };
 
 #include <X11/XF86keysym.h>
 #include "exitdwm.c"
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
+	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,			                  XK_w,		   spawn,		       {.v = (const char*[]){ BROWSER, NULL } } },
 	{ MODKEY,			                  XK_e,		   spawn,		       {.v = (const char*[]){ EXPLORER, NULL } } },

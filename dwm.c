@@ -1875,7 +1875,7 @@ fullscreen(const Arg *arg)
 	togglebar(arg);
 }
 
-setgaps(const Arg *arg)
+static void setgaps(const Arg *arg)
 {
 	if ((arg->i == 0) || (selmon->gappx + arg->i < 0))
 		selmon->gappx = 0;
@@ -1884,7 +1884,7 @@ setgaps(const Arg *arg)
 	arrange(selmon);
 }
 
-setlayout(const Arg *arg)
+static void setlayout(const Arg *arg)
 {
 	if (!arg || !arg->v || arg->v != selmon->lt[selmon->sellt])
 		selmon->sellt ^= 1;

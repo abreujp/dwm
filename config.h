@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]       = "#abb2bf";
-static const char normbgcolor[]       = "#282c34";
-static const char normbordercolor[]   = "#282c34";
-static const char selfgcolor[]        = "#61afef";
-static const char selbgcolor[]        = "#282c34";
-static const char selbordercolor[]    = "#61afef";
+static const char normfgcolor[]       = "#ebdbb2";
+static const char normbgcolor[]       = "#282828";
+static const char normbordercolor[]   = "#928374";
+static const char selfgcolor[]        = "#e6e6e6";
+static const char selbgcolor[]        = "#d65d0e";
+static const char selbordercolor[]    = "#d65d0e";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -81,6 +81,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "15", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *rofi[]  = { "rofi", "-show", "drun", "-show-icons", NULL };
+static const char *scrotselcmd[]  =  {"scrot", "-s", NULL };
 
 #include <X11/XF86keysym.h>
 #include "exitdwm.c"
@@ -121,6 +122,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	{ ShiftMask,										XK_Print,  spawn,          {.v = scrotselcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

@@ -140,6 +140,8 @@ struct Monitor {
 	unsigned int tagset[2];
 	int showbar;
 	int topbar;
+  float centeredMasterWidthFactor; 
+	float tileMasterWidthFactor;    
 	Client *clients;
 	Client *sel;
 	Client *stack;
@@ -807,7 +809,7 @@ centeredmaster(Monitor *m)
 
 	if (n > m->nmaster) {
 		/* go mfact box in the center if more than nmaster clients */
-		mw = m->nmaster ? m->ww * m->mfact : 0;
+		mw = m->nmaster ? m->ww * centeredMasterWidthFactor : 0;
 		tw = m->ww - mw;
 
 		if (n - m->nmaster > 1) {
@@ -1875,7 +1877,7 @@ fullscreen(const Arg *arg)
 	togglebar(arg);
 }
 
-setgaps(const Arg *arg)
+static void setgaps(const Arg *arg)
 {
 	if ((arg->i == 0) || (selmon->gappx + arg->i < 0))
 		selmon->gappx = 0;
@@ -1884,7 +1886,7 @@ setgaps(const Arg *arg)
 	arrange(selmon);
 }
 
-setlayout(const Arg *arg)
+static void setlayout(const Arg *arg)
 {
 	if (!arg || !arg->v || arg->v != selmon->lt[selmon->sellt])
 		selmon->sellt ^= 1;
@@ -2072,7 +2074,7 @@ tile(Monitor *m)
 		return;
 
 	if (n > m->nmaster)
-		mw = m->nmaster ? m->ww * m->mfact : 0;
+		mw = m->nmaster ? m->ww * tileMasterWidthFactor : 0;
 	else
 		mw = m->ww - m->gappx;
 	  for (i = 0, my = ty = m->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
@@ -2708,3 +2710,4 @@ main(int argc, char *argv[])
 	XCloseDisplay(dpy);
 	return EXIT_SUCCESS;
 }
+

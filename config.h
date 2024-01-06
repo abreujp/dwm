@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#define BROWSER "brave-browser"
+#define BROWSER "brave"
 #define EXPLORER "thunar"
 
 /* appearance */

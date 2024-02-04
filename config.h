@@ -4,7 +4,7 @@
 #define EXPLORER "thunar"
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#a7c080"; // Everforest foreground color for normal text
-static const char normbgcolor[]     = "#2f383e"; // Everforest background color for normal text
-static const char normbordercolor[] = "#7f8c98"; // Everforest border color for normal windows
-static const char selfgcolor[]      = "#2f383e"; // Everforest foreground color for selected text
-static const char selbgcolor[]      = "#a7c080"; // Everforest background color for selected text
-static const char selbordercolor[]  = "#a7c080"; // Everforest border color for selected windows
+static const char normfgcolor[]     = "#D8DEE9"; // Nord foreground color for normal text (Nord4: lighter text)
+static const char normbgcolor[]     = "#3B4252"; // Nord background color for normal text (Nord1: used for background)
+static const char normbordercolor[] = "#4C566A"; // Nord border color for normal windows (Nord3: used for comments and invisible chars, darker than normfgcolor)
+static const char selfgcolor[]      = "#3B4252"; // Nord foreground color for selected text (Nord1: used for background, similar to normbgcolor)
+static const char selbgcolor[]      = "#81a1c1"; // Nord background color for selected text (Nord9)
+static const char selbordercolor[]  = "#81a1c1"; // Nord border color for selected windows (Nord9)
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

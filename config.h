@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#D8DEE9"; // Nord foreground color for normal text (Nord4: lighter text)
-static const char normbgcolor[]     = "#3B4252"; // Nord background color for normal text (Nord1: used for background)
-static const char normbordercolor[] = "#4C566A"; // Nord border color for normal windows (Nord3: used for comments and invisible chars, darker than normfgcolor)
-static const char selfgcolor[]      = "#3B4252"; // Nord foreground color for selected text (Nord1: used for background, similar to normbgcolor)
-static const char selbgcolor[]      = "#81a1c1"; // Nord background color for selected text (Nord9)
-static const char selbordercolor[]  = "#81a1c1"; // Nord border color for selected windows (Nord9)
+static const char normfgcolor[]     = "#c0caf5"; // Tokyo Night foreground color for normal text (claro)
+static const char normbgcolor[]     = "#1a1b26"; // Tokyo Night background color for normal text (escuro)
+static const char normbordercolor[] = "#444b6a"; // Tokyo Night border color for normal windows (um azul mais escuro, complementar)
+static const char selfgcolor[]      = "#1a1b26"; // Tokyo Night foreground color for selected text (similar ao normbgcolor, escuro)
+static const char selbgcolor[]      = "#7aa2f7"; // Tokyo Night background color for selected text (um azul claro vibrante)
+static const char selbordercolor[]  = "#7aa2f7"; // Tokyo Night border color for selected windows (mesma cor que selbgcolor, um azul claro vibrante)
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

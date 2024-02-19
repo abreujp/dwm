@@ -21,8 +21,8 @@ static const char normfgcolor[]     = "#c0caf5"; // Tokyo Night foreground color
 static const char normbgcolor[]     = "#1a1b26"; // Tokyo Night background color for normal text (escuro)
 static const char normbordercolor[] = "#444b6a"; // Tokyo Night border color for normal windows (um azul mais escuro, complementar)
 static const char selfgcolor[]      = "#1a1b26"; // Tokyo Night foreground color for selected text (similar ao normbgcolor, escuro)
-static const char selbgcolor[]      = "#7aa2f7"; // Tokyo Night background color for selected text (um azul claro vibrante)
-static const char selbordercolor[]  = "#7aa2f7"; // Tokyo Night border color for selected windows (mesma cor que selbgcolor, um azul claro vibrante)
+static const char selbgcolor[]      = "#bb9af7"; // Tokyo Night background color for selected text (um azul claro vibrante)
+static const char selbordercolor[]  = "#bb9af7"; // Tokyo Night border color for selected windows (mesma cor que selbgcolor, um azul claro vibrante)
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

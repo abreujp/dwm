@@ -46,7 +46,7 @@ void exitdwm ()
 			S_FORMAT (REBOOT) "\n"
 			S_FORMAT (SHUTDOWN)
 			/* "\" | dmenu -p exit: | " S_FORMAT_CLEAR */
-      "\" | dmenu -l 15 -nb '#1a1b26' -nf '#c0caf5' -sb '#bb9af7' -sf '#1a1b26' -p exit: | " S_FORMAT_CLEAR
+      "\" | dmenu -l 15 -nb '#282a36' -nf '#f8f8f2' -sb '#44475a' -sf '#f8f8f2' -p exit: | " S_FORMAT_CLEAR
 		,
 		"r"
 	);

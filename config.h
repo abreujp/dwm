@@ -17,13 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#c0caf5"; // Tokyo Night foreground color for normal text (claro)
-static const char normbgcolor[]     = "#1a1b26"; // Tokyo Night background color for normal text (escuro)
-static const char normbordercolor[] = "#444b6a"; // Tokyo Night border color for normal windows (um azul mais escuro, complementar)
-static const char selfgcolor[]      = "#1a1b26"; // Tokyo Night foreground color for selected text (similar ao normbgcolor, escuro)
-static const char selbgcolor[]      = "#bb9af7"; // Tokyo Night background color for selected text (um azul claro vibrante)
-static const char selbordercolor[]  = "#bb9af7"; // Tokyo Night border color for selected windows (mesma cor que selbgcolor, um azul claro vibrante)
-
+static const char normfgcolor[]     = "#f8f8f2"; // Dracula foreground color for normal text (claro)
+static const char normbgcolor[]     = "#282a36"; // Dracula background color for normal text (escuro)
+static const char normbordercolor[] = "#44475a"; // Dracula border color for normal windows (um cinza-azulado escuro, complementar)
+static const char selfgcolor[]      = "#f8f8f2"; // Dracula foreground color for selected text (claro)
+static const char selbgcolor[]      = "#44475a"; // Dracula background color for selected text (um cinza-azulado escuro)
+static const char selbordercolor[]  = "#bd93f9"; // Dracula border color for selected windows (um rosa vibrante)
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },

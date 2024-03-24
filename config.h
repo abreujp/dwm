@@ -1,10 +1,10 @@
 /* See LICENSE file for copyright and license details. */
 
-#define BROWSER "firefox"
+#define BROWSER "google-chrome-stable"
 #define EXPLORER "thunar"
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#f8f8f2"; // Dracula foreground color for normal text (claro)
-static const char normbgcolor[]     = "#282a36"; // Dracula background color for normal text (escuro)
-static const char normbordercolor[] = "#44475a"; // Dracula border color for normal windows (um cinza-azulado escuro, complementar)
-static const char selfgcolor[]      = "#f8f8f2"; // Dracula foreground color for selected text (claro)
-static const char selbgcolor[]      = "#44475a"; // Dracula background color for selected text (um cinza-azulado escuro)
-static const char selbordercolor[]  = "#bd93f9"; // Dracula border color for selected windows (um rosa vibrante)
+static const char normfgcolor[]     = "#262626"; // Cor preta para texto normal
+static const char normbgcolor[]     = "#FFFFFF"; // Cor branca para o fundo normal
+static const char normbordercolor[] = "#C0C0C0"; // Cinza claro para a borda das janelas normais
+static const char selfgcolor[]      = "#FFFFFF"; // Cor branca para o texto selecionado
+static const char selbgcolor[]      = "#804fb8"; // Azul claro, similar ao destaque no Xcode
+static const char selbordercolor[]  = "#804fb8"; // Azul claro para a borda das janelas selecionadas
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -41,7 +41,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       1 << 6,            0,           -1 },
-	{ "firefox",  "Navigator",     NULL,       1 << 1,            0,           -1 },
+	{ "Google-chrome",  "google-chrome",     NULL,       1 << 1,            0,           -1 },
 	{ "Thunar",   "thunar",       NULL,       1 << 2,            0,           -1 },
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },
@@ -136,11 +136,15 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
   { MODKEY|ShiftMask,             XK_e,      exitdwm,        {0} },
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock") },
-  { 0, XF86XK_AudioPrev,		spawn,		SHCMD("cmus-remote -r")},
-	{ 0, XF86XK_AudioNext,		spawn,		SHCMD("cmus-remote -n")},
-	{ 0, XF86XK_AudioPause,		spawn,		SHCMD("cmus-remote -u")},
- 	{ 0, XF86XK_AudioPlay,		spawn,		SHCMD("cmus-remote -p")},
-	{ 0, XF86XK_AudioStop,		spawn,		SHCMD("cmus-remote -s")},
+  // Volume
+  { 0, XF86XK_AudioLowerVolume, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
+  { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
+  { 0, XF86XK_AudioMute, spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
+  // Reprodução de mídia
+  { 0, XF86XK_AudioPlay, spawn, SHCMD("playerctl play-pause") },
+  { 0, XF86XK_AudioStop, spawn, SHCMD("playerctl stop") },
+  { 0, XF86XK_AudioPrev, spawn, SHCMD("playerctl previous") },
+  { 0, XF86XK_AudioNext, spawn, SHCMD("playerctl next") },
 };
 
 /* button definitions */

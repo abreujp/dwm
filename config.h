@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#ffffff"; // Cor preta para texto normal
-static const char normbgcolor[]     = "#804fb8"; // Cor branca para o fundo normal
-static const char normbordercolor[] = "#C0C0C0"; // Cinza claro para a borda das janelas normais
-static const char selfgcolor[]      = "#804fb8"; // Cor branca para o texto selecionado
-static const char selbgcolor[]      = "#ffffff"; // Azul claro, similar ao destaque no Xcode
-static const char selbordercolor[]  = "#804fb8"; // Azul claro para a borda das janelas selecionadas
+static const char normfgcolor[]     = "#f8f8f2"; // Dracula foreground color for normal text (claro)
+static const char normbgcolor[]     = "#282a36"; // Dracula background color for normal text (escuro)
+static const char normbordercolor[] = "#44475a"; // Dracula border color for normal windows (um cinza-azulado escuro, complementar)
+static const char selfgcolor[]      = "#f8f8f2"; // Dracula foreground color for selected text (claro)
+static const char selbgcolor[]      = "#44475a"; // Dracula background color for selected text (um cinza-azulado escuro)
+static const char selbordercolor[]  = "#bd93f9"; // Dracula border color for selected windows (um rosa vibrante)
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },

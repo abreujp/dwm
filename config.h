@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#3c3836"; // Gruvbox Light foreground color for normal text (escuro)
-static const char normbgcolor[]     = "#fbf1c7"; // Gruvbox Light background color for normal text (claro)
-static const char normbordercolor[] = "#928374"; // Gruvbox Light border color for normal windows (um marrom acinzentado, complementar)
-static const char selfgcolor[]      = "#3c3836"; // Gruvbox Light foreground color for selected text (escuro)
-static const char selbgcolor[]      = "#ebdbb2"; // Gruvbox Light background color for selected text (um bege claro)
-static const char selbordercolor[]  = "#fe8019"; // Gruvbox Light border color for selected windows (um laranja claro)
+static const char normfgcolor[]     = "#ebdbb2"; // Gruvbox Dark foreground color for normal text (um bege claro)
+static const char normbgcolor[]     = "#282828"; // Gruvbox Dark background color for normal text (escuro)
+static const char normbordercolor[] = "#928374"; // Gruvbox Dark border color for normal windows (um marrom acinzentado, complementar)
+static const char selfgcolor[]      = "#fbf1c7"; // Gruvbox Dark foreground color for selected text (um bege mais claro)
+static const char selbgcolor[]      = "#3c3836"; // Gruvbox Dark background color for selected text (um marrom escuro)
+static const char selbordercolor[]  = "#fe8019"; // Gruvbox Dark border color for selected windows (um laranja claro)
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },

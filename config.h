@@ -17,12 +17,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#ffffff"; // Cor preta para texto normal
-static const char normbgcolor[]     = "#8a99a6"; // Cor branca para o fundo normal
-static const char normbordercolor[] = "#C0C0C0"; // Cinza claro para a borda das janelas normais
-static const char selfgcolor[]      = "#8a99a6"; // Cor branca para o texto selecionado
-static const char selbgcolor[]      = "#ffffff"; // Azul claro, similar ao destaque no Xcode
-static const char selbordercolor[]  = "#0f68a0"; // Azul claro para a borda das janelas selecionadas
+static const char normfgcolor[]     = "#eceff4";
+static const char normbgcolor[]     = "#81a1c1";
+static const char normbordercolor[] = "#e5e9f0";
+static const char selfgcolor[]      = "#81a1c1";
+static const char selbgcolor[]      = "#eceff4";
+static const char selbordercolor[]  = "#81a1c1";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },

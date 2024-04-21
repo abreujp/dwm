@@ -17,20 +17,22 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#bbbbbb";
-static const char normbgcolor[]     = "#000000";
-static const char normbordercolor[] = "#333333";
-static const char selfgcolor[]      = "#ffffff";
-static const char selbgcolor[]      = "#222222";
-static const char selbordercolor[]  = "#ffffff";
+static const char normfgcolor[]     = "#fc9505";
+static const char normbgcolor[]     = "#140b05";
+static const char normbordercolor[] = "#4d2e03";
+static const char selfgcolor[]      = "#140b05";
+static const char selbgcolor[]      = "#fc9505";
+static const char selbordercolor[]  = "#fc9505";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-	[SchemeSel]  = { selfgcolor, selbgcolor,  selbordercolor },
-
+	[SchemeSel] = { selfgcolor, selbgcolor,  selbordercolor },
+    [SchemeStatus] = { normfgcolor, normbgcolor, "#000000" },
+    [SchemeTagsSel] = { selfgcolor, selbgcolor, "#000000" },
+    [SchemeTagsNorm] = { normfgcolor, normbgcolor, "#000000" },
+    [SchemeInfoSel] = { normfgcolor, normbgcolor, "#000000" },
+    [SchemeInfoNorm] = { normfgcolor, normbgcolor, "#000000" },
 };
-
-/* tagging */
 /* static const char *tags[] = { "󰨊", "", "", "", "", "", "", "", "" }; */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 

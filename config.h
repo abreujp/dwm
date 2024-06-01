@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#define BROWSER "google-chrome-stable"
+#define BROWSER "firefox"
 #define EXPLORER "thunar"
 
 /* appearance */
@@ -48,6 +48,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       1 << 6,            0,           -1 },
 	{ "Google-chrome",  "google-chrome",     NULL,       1 << 1,            0,           -1 },
+	{ "org.mozilla.firefox",  "Navigator",     "Mozilla Firefox",       1 << 1,            0,           -1 },
 	{ "Thunar",   "thunar",       NULL,       1 << 2,            0,           -1 },
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },

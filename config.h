@@ -19,7 +19,7 @@ static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
 static const char normfgcolor[]     = "#a9b1d6"; // Cinza claro para texto normal
-static const char normbgcolor[]     = "#1a1b26"; // Preto para fundo normal
+static const char normbgcolor[]     = "#24283b"; // Preto para fundo normal
 static const char normbordercolor[] = "#414868"; // Cinza escuro para borda normal
 
 static const char selfgcolor[]      = "#c0caf5"; // Branco para texto selecionado

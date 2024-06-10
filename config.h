@@ -49,6 +49,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       1 << 6,            0,           -1 },
 	{ "Google-chrome",  "google-chrome",     NULL,       1 << 1,            0,           -1 },
 	{ "org.mozilla.firefox",  "Navigator",     "Mozilla Firefox",       1 << 1,            0,           -1 },
+	{ "Brave-browser",  "brave-browser",     NULL,       1 << 1,            0,           -1 },
 	{ "Thunar",   "thunar",       NULL,       1 << 2,            0,           -1 },
 	{ "TelegramDesktop",   "telegram-desktop",       NULL,       1 << 3,            0,           -1 },
 	{ "qBittorrent",   "qbittorrent",       NULL,       1 << 4,            0,           -1 },

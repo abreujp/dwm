@@ -18,13 +18,13 @@ static const char *fonts[]          = { "JetBrainsMono Nerd Font:style=bold:size
 
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static const char normfgcolor[]     = "#3c3836"; // Cinza claro para texto normal
-static const char normbgcolor[]     = "#fbf1c7"; // Preto para fundo normal
-static const char normbordercolor[] = "#928374"; // Cinza escuro para borda normal
+static const char normfgcolor[]     = "#2E3440"; // Cinza escuro para texto normal
+static const char normbgcolor[]     = "#ECEFF4"; // Branco para fundo normal
+static const char normbordercolor[] = "#D8DEE9"; // Cinza claro para borda normal
 
-static const char selfgcolor[]      = "#282828"; // Branco para texto selecionado
-static const char selbgcolor[]      = "#fabd2f"; // Azul claro para fundo selecionado
-static const char selbordercolor[]  = "#fabd2f"; // Azul claro para borda selecionada
+static const char selfgcolor[]      = "#ECEFF4"; // Branco para texto selecionado
+static const char selbgcolor[]      = "#5E81AC"; // Azul para fundo selecionado
+static const char selbordercolor[]  = "#5E81AC"; // Azul para borda selecionada
 
 static const char *colors[][3]      = {
     /*                  fg          bg          border   */

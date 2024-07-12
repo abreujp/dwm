@@ -20,13 +20,13 @@ static const char *fonts[]          = { "FiraCode Nerd Font Mono:style=Bold:size
 /* static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10"; */
 static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=10";
 
-static const char normfgcolor[]     = "#2E3440"; // Cinza escuro para texto normal
-static const char normbgcolor[]     = "#ECEFF4"; // Branco para fundo normal
-static const char normbordercolor[] = "#D8DEE9"; // Cinza claro para borda normal
+static const char normfgcolor[]     = "#CDD6F4"; // Cor do texto normal (Cinza claro)
+static const char normbgcolor[]     = "#1E1E2E"; // Cor do fundo normal (Fundo escuro)
+static const char normbordercolor[] = "#1E1E2E"; // Cor da borda normal (Fundo escuro)
 
-static const char selfgcolor[]      = "#ECEFF4"; // Branco para texto selecionado
-static const char selbgcolor[]      = "#5E81AC"; // Azul para fundo selecionado
-static const char selbordercolor[]  = "#5E81AC"; // Azul para borda selecionada
+static const char selfgcolor[]      = "#1E1E2E"; // Cor do texto selecionado (Fundo escuro)
+static const char selbgcolor[]      = "#CBA6F7"; // Cor do fundo selecionado (Azul claro)
+static const char selbordercolor[]  = "#CBA6F7"; // Cor da borda selecionada (Azul claro)
 
 static const char *colors[][3]      = {
     /*                  fg          bg          border   */

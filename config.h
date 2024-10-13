@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#define BROWSER "google-chrome"
+#define BROWSER "google-chrome-stable"
 #define EXPLORER "thunar"
 
 /* appearance */
@@ -18,7 +18,7 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Monaco Nerd Font Mono:style=Bold:size=10:antialias=true:autohint=true", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 
 /* static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10"; */
-static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=10";
+static const char dmenufont[]       = "Monaco Nerd Font Mono:size=10";
 
 static const char normfgcolor[]     = "#CDD6F4"; // Cor do texto normal (Cinza claro)
 static const char normbgcolor[]     = "#1E1E2E"; // Cor do fundo normal (Fundo escuro)
